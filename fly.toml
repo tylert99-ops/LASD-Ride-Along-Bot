@@ -1,12 +1,13 @@
 app = "lasd-ride-along-bot"
-primary_region = "ord"
+primary_region = "iad"
 
-[build]
-
-[processes]
-app = "python bot.py"
+[http_service]
+auto_start_machines = true
+auto_stop_machines = true
+internal_port = 8_080
+min_machines_running = 1
 
 [[vm]]
-memory = "1gb"
 cpus = 1
-memory_mb = 1024
+memory = "1gb"
+memory_mb = 1_024
