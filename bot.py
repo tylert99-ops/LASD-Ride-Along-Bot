@@ -46,8 +46,9 @@ async def ra(ctx):
             "What type of ride-along are you requesting?\n\n"
             "1️⃣ Day 1 ride-along\n"
             "2️⃣ Day 2 ride-along\n"
-            "3️⃣ Day 3 Evaluation ride-along\n\n"
-            "Type **1**, **2**, or **3**."
+            "3️⃣ Day 3 ride-along\n"
+            "4️⃣ Day 4 Evaluation ride-along\n\n"
+            "Type **1**, **2**, **3**, or **4**."
         ),
         color=discord.Color.green()
     )
@@ -69,7 +70,8 @@ async def ra(ctx):
     ride_types = {
         "1": "Day 1 ride-along",
         "2": "Day 2 ride-along",
-        "3": "Day 3 Evaluation ride-along"
+        "3": "Day 3",
+        "4": "Day 4 Evaluation ride-along"
     }
     ride_type = ride_types[msg.content]
 
