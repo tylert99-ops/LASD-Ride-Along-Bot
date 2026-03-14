@@ -55,7 +55,7 @@ async def ra(ctx):
     await dm.send(embed=dm_embed)
 
     def type_check(m):
-        return m.author == ctx.author and m.channel == dm and m.content in {"1", "2", "3"}
+        return m.author == ctx.author and m.channel == dm and m.content in {"1", "2", "3", "4"}
 
     try:
         msg = await bot.wait_for("message", check=type_check, timeout=60)
@@ -70,7 +70,7 @@ async def ra(ctx):
     ride_types = {
         "1": "Day 1 ride-along",
         "2": "Day 2 ride-along",
-        "3": "Day 3",
+        "3": "Day 3 ride-along",
         "4": "Day 4 Evaluation ride-along"
     }
     ride_type = ride_types[msg.content]
