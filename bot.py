@@ -19,7 +19,7 @@ if not TOKEN:
 
 # ---------------- CONFIG ----------------
 fto_role_id = 1479648729362333697   # Field Training Officer
-REQUEST_CHANNEL_NAME = "request-ride-along"
+REQUEST_CHANNEL_NAME = "・request-ride-along"
 
 # ---------------- READY ----------------
 @bot.event
